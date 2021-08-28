@@ -78,7 +78,7 @@ fetch(`/weather?address=${location}`).then((response)=>{
            console.log(data.address);
            console.log(data.Temperature);
            message_show_error.textContent=''
-           message_show_result.innerHTML=`<b>Address is: ${data.address} <br>Tempertaure is: ${data.Temperature}&#8451;</b>`
+           message_show_result.innerHTML=`<b>Address is: ${data.address} <br>Tempertaure is: ${data.Temperature}&#8451; and it feels like ${data.feelslike}&#8451<br>Humidity: ${data.humidity}</b>`
        }
         
     })

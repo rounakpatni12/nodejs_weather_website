@@ -67,8 +67,10 @@ else{
       }
       
       res.send({address:location,
-      Temperature:forecastdata.Temperature
-    
+      Temperature:forecastdata.Temperature,
+      feelslike:forecastdata.feelslike,
+      humidity:forecastdata.humidity
+      
       });
       
     })
